@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% if session.logged_in %}
+  <h1>Order</h1>
+  {% from "includes/_formhelpers.html" import render_field %}
+  <form method="POST" action="">
+    <div class="form-group">
+      {{ render_field(form.productid, class_="form-control") }}
+    </div>
+    <div class="form-group">
+      {{ render_field(form.name, class_="form-control", id="editor") }}
+    </div>
+    <div class="form-group">
+      {{ render_field(form.phone, class_="form-control") }}
+    </div>
+    <div class="form-group">
+      {{ render_field(form.address, class_="form-control") }}
+    </div>
+    <p><input class="btn btn-primary" type="submit" value="Submit">
+  </form>
+{% else %}
+  <div class="jumbotron text-center">
+    <h3>Please Login to Order!</h3>
+</div>
+{% endif %}
+{% endblock %}

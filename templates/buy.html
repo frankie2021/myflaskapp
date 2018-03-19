@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% if session.logged_in %}
+<center><a href="/order" class="btn btn-primary btn-lg">Order</a></center>
+{% else %}
+  <div class="jumbotron text-center">
+    <h3>Please Login to Order!</h3>
+</div>
+{% endif %}
+<h1><center>[ID:1]HSBC Hong Kong Miniature Metal Coin Bank Souvenir Building 8" Royal Selanger($200)</center></h1>
+<br><center><img src="static/s1.jpeg"/></center>
+<h1><center>[ID:2]Bank of China Metal Hong Kong souvenir building architecture model replica 11 in($160)</center></h1>
+<br><center><img src="static/s2.jpeg"/></center>
+<h1><center>[ID:3]Kowloon Station tower (Hong Kong) souvenir building($120)</center></h1>
+<br><center><img src="static/s3.jpeg"/></center>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<style>
+.hkbutton {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 40%;
+  text-align: center;
+  font-size: 32px;
+  margin: 10px 0px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hkbutton:hover {opacity: 1}
+
+.cubutton {
+  background-color: #6666ff;
+  border: none;
+  color: white;
+  padding: 16px 40%;
+  text-align: center;
+  font-size: 32px;
+  margin: 10px 0px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cubutton:hover {opacity: 1}
+</style>
+</head>
+<body>
+<div class="container">
+  <center><button type="button" class="hkbutton" data-toggle="collapse" data-target="#demo">HongKong</button></center>
+  <div id="demo" class="collapse">
+<h2><center>About Hong Kong</center></h2>
+<h4>Hong Kong , officially the Hong Kong Special Administrative Region of the People's Republic of China, is an autonomous territory on the eastern side of the Pearl River estuary in East Asia. Along with Macau, Guangzhou, Shenzhen, Zhuhai, and several other major cities in Guangdong, the territory forms a core part of the Pearl River Delta metropolitan region, the most populated area in the world. With over 7.4 million Hongkongers of various nationalities in a territory of 1,104 square kilometres (426 sq mi), Hong Kong is the fourth-most densely populated region in the world.</h4>
+  </div>
+<div class="container">
+  <center><button type="button" class="cubutton" data-toggle="collapse" data-target="#demo2">Culture</button></center>
+  <div id="demo2" class="collapse">
+<h2><center>Shopping</center></h2>
+<p><h4>Hong Kong, nicknamed "shopping paradise", is well-known for its shopping district with multiple department stores. Many imported goods transported to Hong Kong have lower tax duties than the international standard, making most items affordable for the general public.</h4></p>
+<p><h4>Hong Kong is identified by its materialistic culture and high levels of consumerism. Shops from the lowest end to the most upscale pack the streets in close proximity. Some popular shopping destinations include Mongkok, Tsim Sha Tsui, and Causeway Bay.</h4></p>
+<br>
+<h2><center>Food</center></h2>
+<p><h4>Hong Kong cuisine is mainly influenced by Cantonese cuisine, British Cuisine, other Western Cuisines, non-Cantonese Chinese cuisine (especially Teochew, and Hakka, Hokkien), Japan, and Southeast Asia, due to Hong Kong's past as a British colony and long history of being an international port of commerce. From the roadside stalls to the most upscale restaurants, Hong Kong provides an unlimited variety of food in every class. Complex combinations and international gourmet expertise have given Hong Kong the reputable labels of "Gourmet Paradise" and "World's Fair of Food".</h4></p>
+  </div>
+</div>
+<br>
+<h1><center>Hong Kong Map</center></h1>
+<br><center><img src="static/hkmap.jpg"/></center>
+</body>
+{% endblock %}
