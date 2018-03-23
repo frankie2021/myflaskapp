@@ -31,8 +31,11 @@ def order():
         # Create cursor
         cur = mysql.connection.cursor()
 
+	sql = "INSERT INTO `order` (`productid`, `name`, `phone`, `address`) VALUES(%s, '%s', %s, '%s')" % (productid, name, phone, address)
+	print (sql)
+
         # Execute query
-        cur.execute("INSERT INTO order(productid, name, phone, address) VALUES(%s, %s, %s, %s)", (productid, name, phone, address))
+        cur.execute(sql)
 
         # Commit to DB
         mysql.connection.commit()
